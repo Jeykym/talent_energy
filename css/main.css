@@ -89,6 +89,13 @@ html {
   background: #000000;
   color: #ffffff;
 }
+@media (min-width: 1200px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .navbar__brand {
   height: 10vh;
 }
@@ -102,6 +109,17 @@ html {
   width: 100%;
   text-align: center;
   transition: all 0.3s ease-out;
+}
+@media (min-width: 1200px) {
+  .navbar__collapse {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+  }
 }
 .navbar__collapse--active {
   visibility: visible;
@@ -119,6 +137,25 @@ html {
   border: 1px solid #ffffff;
   transition: all 0.3s ease-out;
 }
+@media (min-width: 1200px) {
+  .navbar__item {
+    position: relative;
+    border: none;
+  }
+  .navbar__item:hover::after {
+    width: 100%;
+  }
+  .navbar__item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    bottom: 20%;
+    left: 0;
+    transition: all 0.3s ease-out;
+  }
+}
 .navbar__item:hover {
   cursor: pointer;
 }
@@ -129,6 +166,11 @@ html {
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease-out;
+}
+@media (min-width: 1200px) {
+  .navbar__burger {
+    display: none;
+  }
 }
 .navbar__burger:hover {
   height: 1.5rem;

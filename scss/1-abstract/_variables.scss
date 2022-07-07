@@ -4,4 +4,8 @@ $ratio: 1.33;
 $dark: #000000;
 $light: #ffffff;
 
+$breakpoints: (
+    'navbar':   1200px
+) !default;
+
 $navbar-height: 10vh

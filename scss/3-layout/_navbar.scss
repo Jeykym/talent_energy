@@ -8,6 +8,12 @@
     background: $dark;
     color: $light;
 
+    @include respond-to('navbar') {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 
     &__brand {
         height: $navbar-height;
@@ -28,6 +34,19 @@
         text-align: center;
 
         transition: all .3s ease-out;
+
+        @include respond-to('navbar') {
+            visibility: visible;
+            opacity: 1;
+
+            position: static;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 40%;
+        }
 
 
         &--active {
@@ -55,6 +74,29 @@
 
         transition: all .3s ease-out;
 
+
+        @include respond-to('navbar') {
+            position: relative;
+            border: none;
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 3px;
+                background: $light;
+
+                bottom: 20%;
+                left: 0;
+
+                transition: all .3s ease-out;
+            }
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -70,6 +112,11 @@
         align-items: center;
 
         transition: all .3s ease-out;
+
+
+        @include respond-to('navbar') {
+            display: none;
+        }
 
 
         &:hover {
