@@ -1,0 +1,63 @@
+.navbar {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: $dark;
+    color: $light;
+
+
+    &__brand {
+        height: $navbar-height;
+    }
+
+
+    &__collapse {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: $navbar-height;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    &__item {
+        padding: 1rem 0;
+
+        background: $dark;
+        color: $light;
+
+        border: 1px solid $light;
+    }
+
+
+    &__burger {
+        width: 2rem;
+        height: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        transition: all .3s ease-out;
+
+
+        &:hover {
+            height: 1.5rem;
+            cursor: pointer;
+        }
+
+        &__line {
+            width: 100%;
+            height: 2px;
+
+            background: $light
+        }
+    }
+}
