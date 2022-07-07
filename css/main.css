@@ -93,12 +93,19 @@ html {
   height: 10vh;
 }
 .navbar__collapse {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   left: auto;
   right: auto;
   top: 10vh;
   width: 100%;
   text-align: center;
+  transition: all 0.3s ease-out;
+}
+.navbar__collapse--active {
+  visibility: visible;
+  opacity: 1;
 }
 .navbar__item {
   padding: 1rem 0;
@@ -107,7 +114,6 @@ html {
   border: 1px solid #ffffff;
 }
 .navbar__burger {
-  width: 2rem;
   height: 1rem;
   display: flex;
   flex-direction: column;
@@ -119,8 +125,24 @@ html {
   height: 1.5rem;
   cursor: pointer;
 }
+.navbar__burger--active {
+  height: 1.5rem;
+}
 .navbar__burger__line {
-  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  width: 2rem;
   height: 2px;
   background: #ffffff;
+  transition: all 0.3s ease-out;
+}
+.navbar__burger__line--active:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+.navbar__burger__line--active:nth-child(2) {
+  visibility: hidden;
+  opacity: 0;
+}
+.navbar__burger__line--active:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -10px);
 }/*# sourceMappingURL=main.css.map */
