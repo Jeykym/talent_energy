@@ -34,6 +34,14 @@
             visibility: visible;
             opacity: 1;
         }
+
+
+        &--active .navbar__item:hover {
+            background: $light;
+            color: $dark;
+
+            border: 1px solid $dark;
+        }
     }
 
 
@@ -44,6 +52,12 @@
         color: $light;
 
         border: 1px solid $light;
+
+        transition: all .3s ease-out;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
 

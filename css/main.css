@@ -107,11 +107,20 @@ html {
   visibility: visible;
   opacity: 1;
 }
+.navbar__collapse--active .navbar__item:hover {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
 .navbar__item {
   padding: 1rem 0;
   background: #000000;
   color: #ffffff;
   border: 1px solid #ffffff;
+  transition: all 0.3s ease-out;
+}
+.navbar__item:hover {
+  cursor: pointer;
 }
 .navbar__burger {
   height: 1rem;
