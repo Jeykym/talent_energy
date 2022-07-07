@@ -1,0 +1,22 @@
+.landing {
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $dark;
+
+
+    &__headings {
+        margin-bottom: 3rem;
+    }
+
+
+    &__heading {
+        text-align: center;
+
+        margin-bottom: 2rem;
+    }
+}

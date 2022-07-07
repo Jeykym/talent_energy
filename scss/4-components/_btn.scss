@@ -1,0 +1,22 @@
+.btn {
+    width: 8rem;
+    height: 3rem;
+
+    background: $dark;
+    color: $light;
+
+    border-radius: 1rem;
+
+    text-align: center;
+
+    transition: all .3s ease-out;
+
+    &:hover {
+        cursor: pointer;
+
+        background: $light;
+        color: $dark;
+
+        border: 1px solid $dark;
+    }
+}

@@ -1,5 +1,5 @@
 .navbar {
-    height: 10vh;
+    height: $navbar-height;
 
     display: flex;
     justify-content: space-around;
@@ -16,7 +16,7 @@
 
 
     &__brand {
-        height: $navbar-height;
+        height: 100%;
     }
 
 

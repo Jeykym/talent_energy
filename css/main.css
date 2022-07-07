@@ -81,6 +81,26 @@ html {
   font-size: 100%;
 }
 
+h1 {
+  font-size: 416.15795893%;
+}
+
+h2 {
+  font-size: 312.900721%;
+}
+
+h3 {
+  font-size: 235.2637%;
+}
+
+h4 {
+  font-size: 176.89%;
+}
+
+h5 {
+  font-size: 133%;
+}
+
 .navbar {
   height: 10vh;
   display: flex;
@@ -97,7 +117,7 @@ html {
   }
 }
 .navbar__brand {
-  height: 10vh;
+  height: 100%;
 }
 .navbar__collapse {
   visibility: hidden;
@@ -196,4 +216,36 @@ html {
 }
 .navbar__burger__line--active:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -10px);
+}
+
+.btn {
+  width: 8rem;
+  height: 3rem;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.landing {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+}
+.landing__headings {
+  margin-bottom: 3rem;
+}
+.landing__heading {
+  text-align: center;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
