@@ -275,4 +275,44 @@ h5 {
 .invitation__author {
   align-self: flex-end;
   margin-top: 2rem;
+}
+
+.why {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.why__intro {
+  width: 70%;
+  margin-bottom: 5rem;
+}
+.why__heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.why__reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .why__reasons {
+    width: 70%;
+    align-items: flex-start;
+  }
+}
+.why__reason {
+  width: 40%;
+  margin-bottom: 5rem;
+}
+@media (min-width: 1000px) {
+  .why__reason:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+.why__reason__heading {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
