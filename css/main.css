@@ -339,7 +339,8 @@ h5 {
 .how__item::before {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
   content: counter(item);
   font-size: 133px;
 }
