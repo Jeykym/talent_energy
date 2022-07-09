@@ -278,7 +278,7 @@ h5 {
 }
 
 .why {
-  height: 90vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -314,5 +314,35 @@ h5 {
   }
 }
 .why__reason__heading {
+  margin-bottom: 1rem;
+}
+
+.how {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how__heading {
+  margin-bottom: 6rem;
+}
+.how__info {
+  width: 60%;
+  counter-reset: item;
+}
+.how__item {
+  position: relative;
+  counter-increment: item;
+  padding-left: 4rem;
+  margin-bottom: 7rem;
+}
+.how__item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: counter(item);
+  font-size: 133px;
+}
+.how__item__heading {
   margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

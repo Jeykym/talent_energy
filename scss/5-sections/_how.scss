@@ -1,0 +1,60 @@
+.how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__heading {
+        margin-bottom: 6rem;
+    }
+
+
+    &__info {
+        width: 60%;
+        
+        counter-reset: item;
+    }
+
+
+    &__item {
+        position: relative;
+
+        counter-increment: item;
+
+        padding-left: 4rem;
+        margin-bottom: 7rem;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            content: counter(item);
+
+
+            font-size: $font-size * $ratio * 5;
+        }
+
+
+        &__heading {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+// ol li {
+//     counter-increment: muffins;
+// }
+
+
+// ol li::before {
+//     content: counter(muffins) '+';
+// }
+
+
+// ol {
+//     list-style: none;
+//     counter-reset: muffins;
+// }
