@@ -114,7 +114,10 @@ h5 {
 }
 
 .navbar {
-  height: 10vh;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -137,7 +140,7 @@ h5 {
   position: absolute;
   left: auto;
   right: auto;
-  top: 10vh;
+  top: 4rem;
   width: 100%;
   text-align: center;
   transition: all 0.3s ease-out;
@@ -188,6 +191,9 @@ h5 {
     transition: all 0.3s ease-out;
   }
 }
+.navbar__item--active::after {
+  width: 100%;
+}
 .navbar__item:hover {
   cursor: pointer;
 }
@@ -228,6 +234,13 @@ h5 {
 }
 .navbar__burger__line--active:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -10px);
+}
+
+.why,
+.how,
+.projects {
+  margin-top: -4rem;
+  padding-top: 4rem;
 }
 
 .btn {

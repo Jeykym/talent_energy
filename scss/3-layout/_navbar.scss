@@ -1,5 +1,9 @@
 .navbar {
+    width: 100%;
     height: $navbar-height;
+
+    position: fixed;
+    z-index: 2;
 
     display: flex;
     justify-content: space-around;
@@ -97,6 +101,12 @@
             }
         }
 
+
+
+        &--active::after {
+            width: 100%;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -158,4 +168,12 @@
             }
         }
     }
+}
+
+
+.why,
+.how,
+.projects {
+    margin-top: -$navbar-height;
+    padding-top: $navbar-height;
 }
