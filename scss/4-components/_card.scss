@@ -1,0 +1,23 @@
+.card {
+    width: 20rem;
+    height: 25rem;
+
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    &__heading {
+        margin-bottom: 3rem;
+    }
+
+
+    &__text {
+        width: 70%;
+
+        margin-bottom: 2rem;
+    }
+}

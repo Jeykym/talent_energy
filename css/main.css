@@ -101,6 +101,13 @@ h5 {
   font-size: 26.6px;
 }
 
+.btn {
+  font-size: 20px;
+}
+.btn--small {
+  font-size: 20px;
+}
+
 .navbar {
   height: 10vh;
   display: flex;
@@ -219,11 +226,11 @@ h5 {
 }
 
 .btn {
-  width: 8rem;
+  width: 9rem;
   height: 3rem;
   background: #000000;
   color: #ffffff;
-  border-radius: 1rem;
+  border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease-out;
 }
@@ -232,6 +239,28 @@ h5 {
   background: #ffffff;
   color: #000000;
   border: 1px solid #000000;
+}
+.btn--small {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__heading {
+  margin-bottom: 3rem;
+}
+.card__text {
+  width: 70%;
+  margin-bottom: 2rem;
 }
 
 .landing {
@@ -346,4 +375,29 @@ h5 {
 }
 .how__item__heading {
   margin-bottom: 1rem;
+}
+
+.projects {
+  height: 300vh;
+}
+@media (min-width: 1000px) {
+  .projects {
+    height: 90vh;
+  }
+}
+.projects__heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.projects__cards {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .projects__cards {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */

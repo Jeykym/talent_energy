@@ -8,12 +8,16 @@ $h3: $h4 * $ratio;
 $h2: $h3 * $ratio;
 $h1: $h2 * $ratio;
 
+$btn: $font-size;
+$btn-small: $font-size;
+
 $dark: #000000;
 $light: #ffffff;
 
 $breakpoints: (
     'navbar': 1200px,
-    'why': 1000px
+    'why': 1000px,
+    'projects': 1000px
 ) !default;
 
 $navbar-height: 10vh

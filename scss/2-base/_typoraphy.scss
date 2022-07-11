@@ -26,3 +26,13 @@ h4 {
 h5 {
     font-size: $h5;
 }
+
+
+.btn {
+    font-size: $font-size;
+
+
+    &--small {
+        font-size: $btn-small;
+    }
+}
