@@ -1,13 +1,25 @@
 .invitation {
-    height: 90vh;
+    height: 40rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
 
+    @include respond-to('invitation') {
+        height: 40rem;
+
+        flex-direction: row;
+    }
+
+
     &__image {
-        height: 70%;
+        height: 40%;
+
+        @include respond-to('invitation') {
+            height: 70%;
+        }
     }
 
 

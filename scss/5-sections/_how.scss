@@ -7,12 +7,16 @@
 
     &__heading {
         margin-bottom: 6rem;
+
+        text-align: center;
     }
 
 
     &__info {
         width: 60%;
-        
+
+        margin-bottom: 4rem;
+
         counter-reset: item;
     }
 
@@ -23,7 +27,12 @@
         counter-increment: item;
 
         padding-left: 4rem;
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
+
+
+        &:nth-child(5) {
+            margin-bottom: 0;
+        }
 
         &::before {
             position: absolute;
@@ -34,7 +43,7 @@
             content: counter(item);
 
 
-            font-size: $font-size * $ratio * 5;
+            font-size: $font-size * $ratio * 3;
         }
 
 
@@ -43,19 +52,3 @@
         }
     }
 }
-
-
-// ol li {
-//     counter-increment: muffins;
-// }
-
-
-// ol li::before {
-//     content: counter(muffins) '+';
-// }
-
-
-// ol {
-//     list-style: none;
-//     counter-reset: muffins;
-// }

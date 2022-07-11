@@ -14,6 +14,7 @@
 
 
     &__headings {
+        color: $dark;
         margin-bottom: 3rem;
     }
 
@@ -22,5 +23,10 @@
         text-align: center;
 
         margin-bottom: 2rem;
+    }
+
+
+    &__subheading {
+        text-align: center;
     }
 }

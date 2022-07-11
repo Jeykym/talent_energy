@@ -1,9 +1,9 @@
 .projects {
-    height: 300vh;
+    height: 100rem;
 
 
     @include respond-to('projects') {
-        height: 90vh;
+        height: 35rem;
     }
     
 

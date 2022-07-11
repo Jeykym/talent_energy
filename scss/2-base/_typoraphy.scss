@@ -1,5 +1,9 @@
 html {
-    font-size: $font-size;
+    font-size: $font-size-small;
+
+    @include respond-to('font') {
+        font-size: $font-size;
+    }
 }
 
 

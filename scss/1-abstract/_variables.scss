@@ -1,3 +1,4 @@
+$font-size-small: 16px;
 $font-size: 20px;
 $ratio: 1.33;
 
@@ -15,9 +16,13 @@ $dark: #000000;
 $light: #ffffff;
 
 $breakpoints: (
+    'font': 600px,
     'navbar': 1200px,
-    'why': 1000px,
-    'projects': 1000px
+    'invitation': 800px,
+    'why-small': 600px,
+    'why-medium': 850px,
+    'why-large': 1000px,
+    'projects': 1200px,
 ) !default;
 
 $navbar-height: 10vh
