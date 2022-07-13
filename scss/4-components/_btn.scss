@@ -1,6 +1,6 @@
 .btn {
-    width: 9rem;
-    height: 3rem;
+    width: 11rem;
+    height: 3.5rem;
 
     background: $dark;
     color: $light;
@@ -10,6 +10,11 @@
     text-align: center;
 
     transition: all .3s ease-out;
+
+    @include respond-to('font') {
+        width: 9rem;
+        height: 3rem;
+    }
 
     &:hover {
         cursor: pointer;

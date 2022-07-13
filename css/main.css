@@ -107,7 +107,12 @@ h5 {
 }
 
 .btn {
-  font-size: 20px;
+  font-size: 15.037593985px;
+}
+@media (min-width: 600px) {
+  .btn {
+    font-size: 20px;
+  }
 }
 .btn--small {
   font-size: 20px;
@@ -281,13 +286,19 @@ h5 {
 }
 
 .btn {
-  width: 9rem;
-  height: 3rem;
+  width: 11rem;
+  height: 3.5rem;
   background: #000000;
   color: #ffffff;
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease-out;
+}
+@media (min-width: 600px) {
+  .btn {
+    width: 9rem;
+    height: 3rem;
+  }
 }
 .btn:hover {
   cursor: pointer;
@@ -319,62 +330,51 @@ h5 {
 }
 
 .landing {
-  height: 90vh;
+  height: 50rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/landing_image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid #000000;
-}
-.landing__headings {
-  color: #000000;
+  padding-top: 4rem;
   margin-bottom: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/landing_image.jpg");
+  background-size: cover;
+  background-color: #000000;
+  background-position: 90% 50%;
+  color: #ffffff;
 }
-.landing__heading {
-  text-align: center;
-  margin-bottom: 2rem;
+@media (min-width: 800px) {
+  .landing {
+    padding-top: 7rem;
+    height: 40rem;
+  }
 }
-.landing__subheading {
-  text-align: center;
-}
-
-.invitation {
-  height: 40rem;
+.landing__intro {
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 800px) {
-  .invitation {
-    height: 40rem;
-    flex-direction: row;
-  }
+.landing__headings {
+  margin-bottom: 2rem;
 }
-.invitation__image {
-  height: 40%;
+.landing__heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
-@media (min-width: 800px) {
-  .invitation__image {
-    height: 70%;
-  }
+.landing__subheading {
+  font-size: 26.6px;
 }
-.invitation__quote {
-  width: 40%;
+.landing__texts {
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 3rem;
 }
-.invitation__text {
-  width: 100%;
-}
-.invitation__author {
+.landing__author {
   align-self: flex-end;
-  margin-top: 2rem;
 }
 
 .why {

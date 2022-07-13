@@ -33,7 +33,11 @@ h5 {
 
 
 .btn {
-    font-size: $font-size;
+    font-size: $font-size / $ratio;
+
+    @include respond-to('font') {
+        font-size: $font-size;
+    }
 
 
     &--small {

@@ -1,0 +1,36 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__heading {
+        margin-bottom: 3rem;
+    }
+
+
+    &__item {
+        width: 50%;
+
+        position: relative;
+
+        list-style-type: '►';
+
+        &[open] {
+            list-style-type: '▼';
+        }
+
+
+        &__heading {
+            margin-bottom: 1rem;
+        }
+
+        &__paragraph {
+            margin-bottom: .5rem;
+        }
+    }
+
+
+    
+}

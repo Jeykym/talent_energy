@@ -1,32 +1,67 @@
 .landing {
-    height: 90vh;
+    height: 50rem;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-image: url('../images/landing_image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: $navbar-height;
+    margin-bottom: 3rem;
 
-    border: 1px solid $dark;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../images/landing_image.jpg');
+    background-size: cover;
+    background-color: $dark;
+    background-position: 90% 50%;
+
+    color: $light;
+
+
+    @include respond-to('landing') {
+        padding-top: $navbar-height + 3rem;
+        height: 40rem;
+    }
+
+
+    &__intro {
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 
     &__headings {
-        color: $dark;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
 
     &__heading {
         text-align: center;
 
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
     }
 
 
     &__subheading {
-        text-align: center;
+        font-size: $font-size * $ratio;
+    }
+
+
+    &__texts {
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        margin-bottom: 3rem;
+    }
+
+
+    &__author {
+        align-self: flex-end;
     }
 }
