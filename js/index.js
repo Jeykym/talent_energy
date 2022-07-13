@@ -1,15 +1,22 @@
-$('.navbar__burger').on('click', function() {
-    $(this).toggleClass('navbar__burger--active');
-    $('.navbar__burger__line').toggleClass(
-        'navbar__burger__line--active'
-    );
-    $('.navbar__collapse').toggleClass(
-        'navbar__collapse--active'
-    );
+const BURGER = $('.navbar__burger');
+const BURGER_LINE = $('.navbar__burger__line');
+const COLLAPSE = $('.navbar__collapse');
+const NAV_ITEM = $('.navbar__item');
+
+const CLASS_BURGER_ACTIVE = 'navbar__burger--active';
+const CLASS_LINE_ACTIVE = 'navbar__burger__line--active';
+const CLASS_COLLAPSE_ACTIVE = 'navbar__collapse--active';
+const CLASS_NAV_ITEM_ACTIVE = 'navbar__item--active';
+
+
+BURGER.on('click', function() {
+    BURGER.toggleClass(CLASS_BURGER_ACTIVE);
+    BURGER_LINE.toggleClass(CLASS_LINE_ACTIVE);
+    COLLAPSE.toggleClass(CLASS_COLLAPSE_ACTIVE);
 })
 
 
-$('.navbar__item').on('click', function() {
-    $('.navbar__item').removeClass('navbar__item--active');
-    $(this).addClass('navbar__item--active');
+NAV_ITEM.on('click', function() {
+    NAV_ITEM.removeClass(CLASS_NAV_ITEM_ACTIVE);
+    $(this).addClass(CLASS_NAV_ITEM_ACTIVE);
 })
