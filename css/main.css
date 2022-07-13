@@ -126,8 +126,8 @@ h5 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #000000;
-  color: #ffffff;
+  background: #1c1c1c;
+  color: #e3e3e3;
 }
 @media (min-width: 1200px) {
   .navbar {
@@ -166,14 +166,14 @@ h5 {
   opacity: 1;
 }
 .navbar__collapse--active .navbar__item:hover {
-  background: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
+  background: #e3e3e3;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
 }
 .navbar__item {
   padding: 1rem 0;
-  background: #000000;
-  color: #ffffff;
+  background: #1c1c1c;
+  color: #e3e3e3;
   transition: all 0.3s ease-out;
 }
 @media (min-width: 1200px) {
@@ -189,7 +189,7 @@ h5 {
     position: absolute;
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: #e3e3e3;
     bottom: 20%;
     left: 0;
     transition: all 0.3s ease-out;
@@ -226,7 +226,7 @@ h5 {
   opacity: 1;
   width: 2rem;
   height: 2px;
-  background: #ffffff;
+  background: #e3e3e3;
   transition: all 0.3s ease-out;
 }
 .navbar__burger__line--active:nth-child(1) {
@@ -257,7 +257,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(28, 28, 28, 0.3);
   transition: all 0.3s ease-out;
 }
 .modal--active {
@@ -271,8 +271,8 @@ h5 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: white;
-  color: #000000;
+  background: #e3e3e3;
+  color: #1c1c1c;
   border-radius: 1rem;
 }
 @media (min-width: 450px) {
@@ -287,8 +287,8 @@ h5 {
 .btn {
   width: 11rem;
   height: 3.5rem;
-  background: #000000;
-  color: #ffffff;
+  background: #1c1c1c;
+  color: #e3e3e3;
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease-out;
@@ -301,9 +301,9 @@ h5 {
 }
 .btn:hover {
   cursor: pointer;
-  background: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
+  background: #e3e3e3;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
 }
 .btn--small {
   width: 6rem;
@@ -337,9 +337,9 @@ h5 {
   margin-bottom: 3rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/landing_image.jpg");
   background-size: cover;
-  background-color: #000000;
+  background-color: #1c1c1c;
   background-position: 90% 50%;
-  color: #ffffff;
+  color: #e3e3e3;
 }
 @media (min-width: 800px) {
   .landing {
