@@ -20,7 +20,7 @@
 
 
     &__brand {
-        height: 100%;
+        height: $navbar-height;
     }
 
 
@@ -73,8 +73,6 @@
 
         background: $dark;
         color: $light;
-
-        border: 1px solid $light;
 
         transition: all .3s ease-out;
 

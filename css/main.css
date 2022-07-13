@@ -137,7 +137,7 @@ h5 {
   }
 }
 .navbar__brand {
-  height: 100%;
+  height: 4rem;
 }
 .navbar__collapse {
   visibility: hidden;
@@ -174,7 +174,6 @@ h5 {
   padding: 1rem 0;
   background: #000000;
   color: #ffffff;
-  border: 1px solid #ffffff;
   transition: all 0.3s ease-out;
 }
 @media (min-width: 1200px) {

@@ -13,7 +13,9 @@ BURGER.on('click', function() {
 })
 
 
+const NAV_BRAND = $('.navbar__brand');
 const NAV_ITEM = $('.navbar__item');
+
 const CLASS_NAV_ITEM_ACTIVE = 'navbar__item--active';
 
 NAV_ITEM.on('click', function() {
@@ -23,6 +25,11 @@ NAV_ITEM.on('click', function() {
     BURGER.removeClass(CLASS_BURGER_ACTIVE);
     BURGER_LINE.removeClass(CLASS_LINE_ACTIVE);
     COLLAPSE.removeClass(CLASS_COLLAPSE_ACTIVE);
+})
+
+
+NAV_BRAND.on('click', function() {
+    NAV_ITEM.removeClass(CLASS_NAV_ITEM_ACTIVE);
 })
 
 
