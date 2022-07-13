@@ -33,3 +33,15 @@
         border-radius: 5px;
     }
 }
+
+
+.landing .btn {
+    color: $dark;
+    background: $light;
+
+
+    &:hover {
+        color: $light;
+        background: $dark;
+    }
+}
