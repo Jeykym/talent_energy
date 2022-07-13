@@ -8,7 +8,6 @@
         width: 50%;
         
         margin-bottom: 5rem;
-        margin-top: 2rem;
     }
 
 
@@ -39,7 +38,7 @@
     &__reason {
         width: 70%;
 
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
 
 
         @include respond-to('why-small') {

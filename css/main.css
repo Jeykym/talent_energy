@@ -386,7 +386,6 @@ h5 {
 .why__intro {
   width: 50%;
   margin-bottom: 5rem;
-  margin-top: 2rem;
 }
 .why__heading {
   margin-bottom: 2rem;
@@ -406,7 +405,7 @@ h5 {
 }
 .why__reason {
   width: 70%;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 @media (min-width: 600px) {
   .why__reason {
@@ -445,7 +444,7 @@ h5 {
   align-items: center;
 }
 .how__heading {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 .how__info {
@@ -457,7 +456,7 @@ h5 {
   position: relative;
   counter-increment: item;
   padding-left: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 .how__item:nth-child(5) {
   margin-bottom: 0;
