@@ -176,30 +176,34 @@ h5 {
   color: #e3e3e3;
   transition: all 0.3s ease-out;
 }
-@media (min-width: 1200px) {
-  .navbar__item {
-    position: relative;
-    border: none;
-  }
-  .navbar__item:hover::after {
-    width: 100%;
-  }
-  .navbar__item::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background: #e3e3e3;
-    bottom: 20%;
-    left: 0;
-    transition: all 0.3s ease-out;
-  }
-}
 .navbar__item--active::after {
   width: 100%;
 }
 .navbar__item:hover {
   cursor: pointer;
+}
+.navbar__link {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  .navbar__link {
+    position: relative;
+    border: none;
+  }
+  .navbar__link:hover::after {
+    width: 100%;
+  }
+  .navbar__link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #e3e3e3;
+    bottom: -50%;
+    left: 0;
+    transition: all 0.3s ease-out;
+  }
 }
 .navbar__burger {
   height: 1rem;
@@ -404,7 +408,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 1000px) {
   .why__content {

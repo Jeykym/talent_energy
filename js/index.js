@@ -1,3 +1,5 @@
+const NAV_LINK = $('.navbar__link');
+
 const BURGER = $('.navbar__burger');
 const BURGER_LINE = $('.navbar__burger__line');
 const COLLAPSE = $('.navbar__collapse');
