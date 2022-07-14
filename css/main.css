@@ -461,7 +461,7 @@ h5 {
 }
 .how__info {
   width: 60%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   counter-reset: item;
 }
 .how__item {
