@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
@@ -104,6 +105,18 @@ h4 {
 
 h5 {
   font-size: 26.6px;
+}
+
+summary {
+  font-size: 35.378px;
+  font-weight: bold;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
 }
 
 .btn {
@@ -508,4 +521,42 @@ h5 {
   .projects__cards {
     flex-direction: row;
   }
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.questions__heading {
+  margin-bottom: 2rem;
+}
+.questions__question {
+  width: 75%;
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+.questions__question[open] .questions__question__heading::before {
+  content: "▼";
+}
+.questions__question__heading {
+  margin-bottom: 1rem;
+}
+.questions__question__heading::before {
+  content: "►";
+}
+.questions__question__text {
+  margin-bottom: 1rem;
+}
+.questions__question__list {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.questions__question__item {
+  margin-bottom: 0.5rem;
+}
+.questions__question__item :last-child {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
