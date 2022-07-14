@@ -47,6 +47,11 @@ strong {
 }
 
 
+label {
+    font-size: $label;
+}
+
+
 .btn {
     font-size: $font-size / $ratio;
 

@@ -23,7 +23,7 @@
                 <a href="#projects" class="navbar__link">Projekty našich klientů</a>
             </li>
             <li class="navbar__item">
-                <a href="#" class="navbar__link">Kontakt</a>
+                <a href="#questions" class="navbar__link">Kontakt</a>
             </li>
         </ul>
 
@@ -50,7 +50,9 @@
                 <small class="landing__author">- Štěpán Galbavý, zakladatel Talent Energy</small>
             </div>
 
-            <button class="btn">Napište nám</button>
+            <button class="btn">
+                <a href="#questions">Napište nám</a>
+            </button>
         </div>
     </section>
 
@@ -163,7 +165,7 @@
     </div>
 
 
-    <section class="questions">
+    <section class="questions" id="questions">
         <h2 class="questions__heading">Jak?</h2>
 
         <details class="questions__question">
@@ -253,6 +255,23 @@
             <p class="questions__question__text"><strong>PRODEJ PRODUKTŮ => PRODEJ ŘEŠENÍ => PRODEJ NA ZÁKLADĚ POTŘEB => TRUSTED ADVISOR</strong></p>
         </details>
     </section>
+
+
+    <div class="contact" id="contact">
+        <form action="" class="contact__form">
+            <div class="contact__group">
+                <label for="question" class="contact__label">Vaše jak</label>
+                <textarea name="question" id="question" wrap="soft" maxlength="250" class="contact__field contact__field--large"></textarea>
+            </div>
+            <div class="contact__group">
+                <label for="email" class="contact__label">Váš email</label>
+                <input type="email" name="email" id="email" class="contact__field">
+            </div>
+            <div class="contact__group">
+                <button type="submit" class="btn btn--small">Odeslat</button>
+            </div>
+        </form>
+    </div>
 
    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
