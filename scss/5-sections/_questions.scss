@@ -1,4 +1,6 @@
 .questions {
+    height: 80rem;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -7,9 +9,18 @@
 
     margin-bottom: 3rem;
 
+    @include respond-to('questions') {
+        height: auto;
+    }
+
 
     &__heading {
+        margin-top: 3rem;
         margin-bottom: 2rem;
+
+        @include respond-to('questions') {
+            margin-top: 0;
+        }
     }
 
 
