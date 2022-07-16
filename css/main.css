@@ -524,6 +524,7 @@ label {
 @media (min-width: 1200px) {
   .projects__cards {
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 .projects__cards .card {

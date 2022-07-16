@@ -22,11 +22,13 @@
 
         @include respond-to('projects') {
             flex-direction: row;
+            justify-content: space-around;
         }
 
 
         & .card {
             margin-bottom: 3rem;
+
         }
     }
 }
