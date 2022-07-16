@@ -10,7 +10,7 @@
 
 
     &__group {
-        width: 40%;
+        width: 80%;
 
         display: flex;
         flex-direction: column;
@@ -18,6 +18,14 @@
         align-items: flex-start;
 
         margin-bottom: 2rem;
+
+        @include respond-to('form') {
+            width: 60%;
+        }
+
+        @include respond-to('form-large') {
+            width: 40%;
+        }
     }
 
 
@@ -32,7 +40,7 @@
 
         border: 1px solid $dark;
 
-        padding-left: .5rem;
+        padding: .5rem;
         overflow-wrap: break-word;
 
         transition: all .3s ease-out;
@@ -44,8 +52,17 @@
 
 
         &--large {
-            padding-top: .5rem;
-            height: 8rem;
+            height: 10rem;
+
+
+            @include respond-to('form') {
+                height: 8rem;
+            }
+
+
+            @include respond-to('form-large') {
+                height: 8rem;
+            }
         }
     }
 
