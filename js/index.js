@@ -57,3 +57,58 @@ MODAL.on('click', function() {
 }).children().on('click', function() {
     return false;
 })
+
+
+
+const FORM = $('.contact__form');
+const INPUTS = FORM.find('input, textarea');
+const DIALOG = $('.dialog');
+const DIALOG_TEXT = $('.dialog__text');
+const DIALOG_CLOSE = $('.dialog__close');
+
+const CLASS_DIALOG_ACITVE = 'dialog--active';
+const CLASS_DIALOG_SUCCESS = 'dialog--success';
+const CLASS_DIALOG_ERROR = 'dialog--error';
+
+
+let request;
+
+FORM.on('submit', function(event) {
+    event.preventDefault();
+
+    if (request) {
+        request.abort();
+    }
+
+
+    let serializedData = FORM.serialize();
+
+    INPUTS.prop('disabled');
+
+    request = $.ajax({
+        url: "/php/form.php",
+        type: "POST",
+        data: serializedData,
+
+        success: function() {
+            DIALOG.addClass(CLASS_DIALOG_SUCCESS);
+            DIALOG_TEXT.text('Dotaz odeslán');
+        },
+
+        error: function() {
+            DIALOG.addClass(CLASS_DIALOG_ERROR);
+            DIALOG_TEXT.text('Něco se nepovedlo');
+        },
+    })
+
+    request.always(function() {
+        DIALOG.addClass(CLASS_DIALOG_ACITVE);
+        INPUTS.prop('disabled', false);
+        FORM[0].reset();
+    })
+})
+
+
+DIALOG_CLOSE.on('click', function() {
+    DIALOG.removeClass(CLASS_DIALOG_ACITVE);
+})

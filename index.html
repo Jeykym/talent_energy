@@ -36,6 +36,14 @@
     </nav>
 
 
+    <div class="dialog">
+        <div class="dialog__container">
+            <p class="dialog__text"></p>
+            <button class="dialog__close">✖</button>
+        </div>
+    </div>
+
+
     <section class="landing" id="landing">
         <div class="landing__intro">
             <div class="landing__headings">
@@ -258,7 +266,7 @@
 
 
     <div class="contact" id="contact">
-        <form action="" class="contact__form">
+        <form action="php/form.php" method="post" class="contact__form">
             <div class="contact__group">
                 <label for="question" class="contact__label">Vaše jak</label>
                 <textarea name="question" id="question" wrap="soft" maxlength="250" class="contact__field contact__field--large"></textarea>
