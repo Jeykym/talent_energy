@@ -1,23 +1,12 @@
 .projects {
-    height: 90rem;
-
-
-    @include respond-to('projects') {
-        height: 35rem;
-    }
-    
-
     &__heading {
         text-align: center;
     }
 
 
     &__cards {
-        height: 100%;
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 
         @include respond-to('projects') {
@@ -29,6 +18,13 @@
         & .card {
             margin-bottom: 3rem;
 
+            :nth-child(3) {
+                margin-bottom: 0;
+            }
+
+            @include respond-to('project') {
+                margin: 0;
+            }
         }
     }
 }

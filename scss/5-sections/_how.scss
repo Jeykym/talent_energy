@@ -1,13 +1,5 @@
 .how {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
     &__heading {
-        margin-bottom: 4rem;
-
         text-align: center;
     }
 
@@ -15,10 +7,11 @@
     &__info {
         width: 60%;
 
-        margin-bottom: 2rem;
+        margin: 0 auto;
 
         counter-reset: item;
     }
+
 
 
     &__item {
@@ -44,11 +37,6 @@
 
 
             font-size: $font-size * $ratio * 3;
-        }
-
-
-        &__heading {
-            margin-bottom: 1rem;
         }
     }
 }
