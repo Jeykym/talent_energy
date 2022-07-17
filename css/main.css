@@ -114,6 +114,7 @@ h3 {
 
 h4 {
   font-size: 35.378px;
+  margin-bottom: 1rem;
 }
 
 h5 {
@@ -139,6 +140,10 @@ label {
 
 section {
   margin-bottom: 5rem;
+}
+
+.footer {
+  line-height: 1.5rem;
 }
 
 .btn {
@@ -450,6 +455,125 @@ section {
 
 .dialog__close:hover {
   cursor: pointer;
+}
+
+.footer {
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1c1c1c;
+  color: #e3e3e3;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    height: 10rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__brand {
+  width: 15rem;
+}
+
+.footer__main {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .footer__main {
+    height: 100%;
+  }
+}
+
+.footer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .footer__address {
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__list {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__list {
+    margin: 0;
+  }
+}
+
+.footer__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__center {
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.footer__rights {
+  margin-bottom: 1rem;
 }
 
 .btn {

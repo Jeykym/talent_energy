@@ -1,0 +1,86 @@
+.footer {
+    height: $footer-height;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: $dark;
+    color: $light;
+
+
+    @include respond-to('footer') {
+        height: $footer-height-large;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+
+    &__brand {
+        width: 15rem;
+    }
+
+
+    &__main {
+        width: 50%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond-to('footer') {
+            height: 100%;
+        }
+    }
+
+
+    &__address {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        @include respond-to('footer') {
+            height: 100%;
+            justify-content: space-around;
+        }
+    }
+
+
+    &__list {
+        margin-bottom: 2rem;
+
+        @include respond-to('footer') {
+            margin: 0;
+        }
+    }
+
+
+    &__center {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 3rem;
+
+
+        @include respond-to('footer') {
+            height: 100%;
+
+            justify-content: space-between;
+
+            margin: 0;
+        }
+    }
+
+
+    &__rights {
+        margin-bottom: 1rem;
+    }
+}
