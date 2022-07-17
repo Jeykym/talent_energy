@@ -1,15 +1,23 @@
 .how {
+
     &__heading {
         text-align: center;
     }
 
 
     &__info {
-        width: 60%;
-
-        margin: 0 auto;
+        width: 40%;
 
         counter-reset: item;
+
+        margin: 0 auto 0 auto;
+
+
+        @include respond-to('how') {
+            width: 80%;
+
+            margin: 0 auto;
+        }
     }
 
 
@@ -19,8 +27,13 @@
 
         counter-increment: item;
 
-        padding-left: 4rem;
         margin-bottom: 4rem;
+        padding-left: 2rem;
+
+
+        @include respond-to('how') {
+            padding-left: 3rem;
+        }
 
 
         &:nth-child(5) {

@@ -641,16 +641,29 @@ section {
 }
 
 .how__info {
-  width: 60%;
-  margin: 0 auto;
+  width: 40%;
   counter-reset: item;
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 380px) {
+  .how__info {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .how__item {
   position: relative;
   counter-increment: item;
-  padding-left: 4rem;
   margin-bottom: 4rem;
+  padding-left: 2rem;
+}
+
+@media (min-width: 380px) {
+  .how__item {
+    padding-left: 3rem;
+  }
 }
 
 .how__item:nth-child(5) {
