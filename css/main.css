@@ -476,8 +476,8 @@ section {
           align-items: center;
   padding-top: 4rem;
   margin-bottom: 3rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/images/landing_image.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/landing_image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://https://jasasul.github.io/talent_energy/images/landing_image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://https://jasasul.github.io/talent_energy/images/landing_image.jpg");
   background-size: cover;
   background-color: #1c1c1c;
   background-position: 90% 50%;
