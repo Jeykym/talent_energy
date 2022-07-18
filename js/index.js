@@ -20,18 +20,25 @@ const NAV_ITEM = $('.navbar__item');
 
 const CLASS_NAV_ITEM_ACTIVE = 'navbar__item--active';
 
+
+function closeNavbar() {
+    BURGER.removeClass(CLASS_BURGER_ACTIVE);
+    BURGER_LINE.removeClass(CLASS_LINE_ACTIVE);
+    COLLAPSE.removeClass(CLASS_COLLAPSE_ACTIVE);
+}
+
 NAV_ITEM.on('click', function() {
     NAV_ITEM.removeClass(CLASS_NAV_ITEM_ACTIVE);
     $(this).addClass(CLASS_NAV_ITEM_ACTIVE);
 
-    BURGER.removeClass(CLASS_BURGER_ACTIVE);
-    BURGER_LINE.removeClass(CLASS_LINE_ACTIVE);
-    COLLAPSE.removeClass(CLASS_COLLAPSE_ACTIVE);
+    closeNavbar();
 })
 
 
 NAV_BRAND.on('click', function() {
     NAV_ITEM.removeClass(CLASS_NAV_ITEM_ACTIVE);
+
+    closeNavbar();
 })
 
 
