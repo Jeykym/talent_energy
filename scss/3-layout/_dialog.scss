@@ -3,12 +3,14 @@
     height: 3rem;
 
     position: fixed;
-    top: $navbar-height + 3rem;
+    top: $navbar-height + 5vh;
     left: 50%;
     transform: translate(-50%, -50%);
 
     visibility: hidden;
     opacity: 0;
+
+    z-index: 1000;
 
 
     transition: all .3s ease-out;

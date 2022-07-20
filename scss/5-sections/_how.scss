@@ -1,4 +1,8 @@
 .how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__heading {
         text-align: center;
@@ -9,15 +13,6 @@
         width: 40%;
 
         counter-reset: item;
-
-        margin: 0 auto 0 auto;
-
-
-        @include respond-to('how') {
-            width: 80%;
-
-            margin: 0 auto;
-        }
     }
 
 
@@ -27,18 +22,8 @@
 
         counter-increment: item;
 
-        margin-bottom: 4rem;
         padding-left: 2rem;
-
-
-        @include respond-to('how') {
-            padding-left: 3rem;
-        }
-
-
-        &:nth-child(5) {
-            margin-bottom: 0;
-        }
+        margin-bottom: 5rem;
 
         &::before {
             position: absolute;
@@ -47,7 +32,6 @@
             transform: translate(-50%, -50%);
 
             content: counter(item);
-
 
             font-size: $font-size * $ratio * 3;
         }

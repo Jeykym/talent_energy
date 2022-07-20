@@ -162,7 +162,7 @@ section {
 
 .navbar {
   width: 100%;
-  height: 4rem;
+  height: 10vh;
   position: fixed;
   z-index: 2;
   display: -webkit-box;
@@ -191,7 +191,7 @@ section {
 }
 
 .navbar__brand {
-  height: 4rem;
+  height: 10vh;
 }
 
 .navbar__collapse {
@@ -200,7 +200,7 @@ section {
   position: absolute;
   left: auto;
   right: auto;
-  top: 4rem;
+  top: 10vh;
   width: 100%;
   text-align: center;
   -webkit-transition: all .3s ease-out;
@@ -341,8 +341,8 @@ section {
 .how,
 .projects,
 .questions {
-  margin-top: -4rem;
-  padding-top: 4rem;
+  margin-top: -10vh;
+  padding-top: 10vh;
 }
 
 .modal {
@@ -405,12 +405,13 @@ section {
   width: 0;
   height: 3rem;
   position: fixed;
-  top: 7rem;
+  top: 15vh;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
+  z-index: 1000;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -458,7 +459,7 @@ section {
 }
 
 .footer {
-  height: 40rem;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,7 +479,7 @@ section {
 
 @media (min-width: 1000px) {
   .footer {
-    height: 10rem;
+    height: 30vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -577,6 +578,20 @@ section {
   margin-bottom: 1rem;
 }
 
+.footer__nav__link {
+  position: relative;
+}
+
+.footer__nav__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #e3e3e3;
+  bottom: -5px;
+  left: 0;
+}
+
 .btn {
   width: 11rem;
   height: 3.5rem;
@@ -646,7 +661,7 @@ section {
 }
 
 .landing {
-  height: 50rem;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,7 +671,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 4rem;
   margin-bottom: 3rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://jasasul.github.io/talent_energy/images/landing_image.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://jasasul.github.io/talent_energy/images/landing_image.jpg");
@@ -664,13 +678,6 @@ section {
   background-color: #1c1c1c;
   background-position: 90% 50%;
   color: #e3e3e3;
-}
-
-@media (min-width: 800px) {
-  .landing {
-    padding-top: 7rem;
-    height: 45rem;
-  }
 }
 
 .landing__intro {
@@ -817,6 +824,22 @@ section {
   }
 }
 
+.how {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .how__heading {
   text-align: center;
 }
@@ -824,31 +847,13 @@ section {
 .how__info {
   width: 40%;
   counter-reset: item;
-  margin: 0 auto 0 auto;
-}
-
-@media (min-width: 380px) {
-  .how__info {
-    width: 80%;
-    margin: 0 auto;
-  }
 }
 
 .how__item {
   position: relative;
   counter-increment: item;
-  margin-bottom: 4rem;
   padding-left: 2rem;
-}
-
-@media (min-width: 380px) {
-  .how__item {
-    padding-left: 3rem;
-  }
-}
-
-.how__item:nth-child(5) {
-  margin-bottom: 0;
+  margin-bottom: 5rem;
 }
 
 .how__item::before {

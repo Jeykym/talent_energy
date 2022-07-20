@@ -85,4 +85,24 @@
     &__rights {
         margin-bottom: 1rem;
     }
+
+    &__nav {
+        &__link {
+            position: relative;
+
+            &::after {
+                content: "";
+
+                position: absolute;
+
+                width: 100%;
+                height: 3px;
+
+                background: $light;
+
+                bottom: -5px;
+                left: 0;
+            }
+        }
+    }
 }
