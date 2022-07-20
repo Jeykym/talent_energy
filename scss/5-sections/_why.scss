@@ -7,7 +7,7 @@
     &__intro {
         width: 50%;
         
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
 
@@ -34,7 +34,12 @@
     &__reason {
         width: 70%;
 
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
+
+
+        @include respond-to('why-large') {
+            margin-bottom: 2rem;
+        }
 
 
         @include respond-to('why-small') {

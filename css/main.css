@@ -90,39 +90,39 @@ meter {
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 @media (min-width: 600px) {
   html {
-    font-size: 20px;
+    font-size: 135.7%;
   }
 }
 
 h1 {
-  font-size: 83.23159px;
+  font-size: 564.72635%;
 }
 
 h2 {
-  font-size: 62.58014px;
+  font-size: 424.60628%;
   margin-bottom: 5rem;
 }
 
 h3 {
-  font-size: 47.05274px;
+  font-size: 319.25284%;
 }
 
 h4 {
-  font-size: 35.378px;
+  font-size: 240.03973%;
   margin-bottom: 1rem;
 }
 
 h5 {
-  font-size: 26.6px;
+  font-size: 180.481%;
 }
 
 summary {
-  font-size: 35.378px;
+  font-size: 240.03973%;
   font-weight: bold;
 }
 
@@ -135,7 +135,7 @@ strong {
 }
 
 label {
-  font-size: 26.6px;
+  font-size: 180.481%;
 }
 
 section {
@@ -147,17 +147,17 @@ section {
 }
 
 .btn {
-  font-size: 15.03759px;
+  font-size: 102.03008%;
 }
 
 @media (min-width: 600px) {
   .btn {
-    font-size: 20px;
+    font-size: 135.7%;
   }
 }
 
 .btn--small {
-  font-size: 20px;
+  font-size: 135.7%;
 }
 
 .navbar {
@@ -451,7 +451,7 @@ section {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 26.6px;
+  font-size: 180.481%;
 }
 
 .dialog__close:hover {
@@ -706,7 +706,7 @@ section {
 }
 
 .landing__subheading {
-  font-size: 26.6px;
+  font-size: 180.481%;
 }
 
 .landing__texts {
@@ -750,7 +750,7 @@ section {
 
 .why__intro {
   width: 50%;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .why__heading {
@@ -781,7 +781,13 @@ section {
 
 .why__reason {
   width: 70%;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1000px) {
+  .why__reason {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -845,15 +851,26 @@ section {
 }
 
 .how__info {
-  width: 40%;
+  width: 70%;
   counter-reset: item;
 }
 
+@media (min-width: 380px) {
+  .how__info {
+    width: 40%;
+  }
+}
+
 .how__item {
+  width: 100%;
   position: relative;
   counter-increment: item;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   margin-bottom: 5rem;
+}
+
+.how__item :nth-child(5) {
+  margin: 0;
 }
 
 .how__item::before {
@@ -863,7 +880,7 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   content: counter(item);
-  font-size: 79.8px;
+  font-size: 541.443%;
 }
 
 .projects__heading {
