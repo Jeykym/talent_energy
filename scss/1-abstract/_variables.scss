@@ -11,8 +11,8 @@ $h1: $h2 * $ratio;
 $summary: $font-size * $ratio * $ratio;
 $label: $font-size * $ratio;
 
-$btn: $font-size;
-$btn-small: $font-size;
+$btn: $font-size / $ratio;
+$btn-small: $btn / $ratio;
 
 $dark: #1c1c1c;
 $light: #e3e3e3;
@@ -34,5 +34,5 @@ $breakpoints: (
 ) !default;
 
 $navbar-height: 10vh;
-$footer-height: 15vh;
+$footer-height: 80vh;
 $footer-height-large: 30vh;

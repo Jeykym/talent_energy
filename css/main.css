@@ -150,14 +150,8 @@ section {
   font-size: 102.03008%;
 }
 
-@media (min-width: 600px) {
-  .btn {
-    font-size: 135.7%;
-  }
-}
-
 .btn--small {
-  font-size: 135.7%;
+  font-size: 76.71434%;
 }
 
 .navbar {
@@ -459,7 +453,7 @@ section {
 }
 
 .footer {
-  height: 15vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
